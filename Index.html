@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 5 Más Importantes | Periódico Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Los 5 Más Importantes</h1>
+        <p>El pulso diario de las cinco grandes tendencias del mundo</p>
+    </header>
+
+    <nav>
+        <button onclick="scrollToSection('deportes')">Deportes</button>
+        <button onclick="scrollToSection('musica')">Música</button>
+        <button onclick="scrollToSection('moda')">Moda</button>
+        <button onclick="scrollToSection('comida')">Comida</button>
+        <button onclick="scrollToSection('tecnologia')">Tecnología</button>
+    </nav>
+
+    <main>
+
+        <section id="deportes">
+            <span class="category-tag">1. Deportes</span>
+            <h2>El impacto de la tecnología en el rendimiento atlético moderno</h2>
+            <div class="news-img img-deportes">[Imagen de Deportes]</div>
+            <div class="content">
+                <p>El mundo del deporte de alta competencia ha entrado en una era completamente digital. Hoy en día, los atletas no solo entrenan su cuerpo, sino que analizan gigabytes de datos generados por sensores biométricos en tiempo real. Desde el fútbol hasta el atletismo de pista, el análisis predictivo ayuda a prevenir lesiones antes de que ocurran, calculando los niveles de fatiga muscular. La nutrición y el descanso ahora se programan mediante algoritmos personalizados, transformando por completo la preparación para los Juegos Olímpicos y los mundiales.</p>
+            </div>
+            
+            <div class="quiz-container">
+                <h3>📰 Quiz Express: ¿Qué tecnología ayuda a prevenir lesiones analizando la fatiga?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q-deportes" value="incorrecto"> Realidad Virtual</label>
+                    <label><input type="radio" name="q-deportes" value="correcto"> Sensores biométricos y análisis de datos</label>
+                    <label><input type="radio" name="q-deportes" value="incorrecto"> Redes sociales avanzadas</label>
+                </div>
+                <button class="quiz-btn" onclick="checkQuiz('deportes', 'correcto')">Enviar Respuesta</button>
+                <div class="result" id="res-deportes"></div>
+            </div>
+        </section>
+
+        <section id="musica">
+            <span class="category-tag">2. Música</span>
+            <h2>El resurgir del vinilo frente a la era del streaming infinito</h2>
+            <div class="news-img img-musica">[Imagen de Música]</div>
+            <div class="content">
+                <p>En un giro irónico de la historia cultural, los formatos físicos analógicos están viviendo su mejor momento en décadas. A pesar de tener acceso a millones de canciones a un solo clic de distancia, las nuevas generaciones están liderando la compra de discos de vinilo. Los expertos apuntan a que el consumidor moderno busca una experiencia tangible: tocar el arte del disco, leer las letras en el reverso y disfrutar del sonido cálido y con imperfecciones que solo una aguja sobre el surco de acetato puede otorgar.</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>📰 Quiz Express: ¿Qué formato físico está resurgiendo con fuerza entre los jóvenes?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q-musica" value="incorrecto"> El Cassette</label>
+                    <label><input type="radio" name="q-musica" value="incorrecto"> El CD-ROM</label>
+                    <label><input type="radio" name="q-musica" value="correcto"> El disco de vinilo</label>
+                </div>
+                <button class="quiz-btn" onclick="checkQuiz('musica', 'correcto')">Enviar Respuesta</button>
+                <div class="result" id="res-musica"></div>
+            </div>
+        </section>
+
+        <section id="moda">
+            <span class="category-tag">3. Moda</span>
+            <h2>Hacia un armario sostenible: el declive del 'Fast Fashion'</h2>
+            <div class="news-img img-moda">[Imagen de Moda]</div>
+            <div class="content">
+                <p>La industria de la moda está sufriendo una metamorfosis obligada por la crisis climática. El concepto de usar y tirar está perdiendo terreno frente al diseño circular y los textiles ecológicos. Grandes marcas comienzan a apostar por ropa fabricada a partir de hongos (micelio), plásticos recuperados del océano y tintes orgánicos no contaminantes. Además, el mercado de segunda mano y el alquiler de prendas de lujo se han consolidado como las opciones favoritas de los consumidores conscientes del medio ambiente.</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>📰 Quiz Express: ¿De qué material innovador y ecológico se está haciendo ropa actualmente?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q-moda" value="correcto"> Micelio (Hongos)</label>
+                    <label><input type="radio" name="q-moda" value="incorrecto"> Plomo maleable</label>
+                    <label><input type="radio" name="q-moda" value="incorrecto"> Poliéster tradicional</label>
+                </div>
+                <button class="quiz-btn" onclick="checkQuiz('moda', 'correcto')">Enviar Respuesta</button>
+                <div class="result" id="res-moda"></div>
+            </div>
+        </section>
+
+        <section id="comida">
+            <span class="category-tag">4. Comida</span>
+            <h2>Gastronomía del futuro: la revolución de la carne cultivada</h2>
+            <div class="news-img img-comida">[Imagen de Comida]</div>
+            <div class="content">
+                <p>Lo que antes parecía ciencia ficción ya es una realidad en los restaurantes más exclusivos del mundo: la carne cultivada en laboratorios a partir de células madre. Este avance promete reducir en un 90% las emisiones de gases de efecto invernadero y el uso de agua que requiere la ganadería tradicional. Chefs con estrellas Michelin están experimentando con texturas y sabores que imitan a la perfección el corte de carne animal, abriendo un debate ético y culinario sin precedentes sobre lo que comeremos en los próximos 50 años.</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>📰 Quiz Express: ¿A partir de qué se produce la carne cultivada en laboratorio?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q-comida" value="incorrecto"> Plantas de soya únicamente</label>
+                    <label><input type="radio" name="q-comida" value="correcto"> Células madre</label>
+                    <label><input type="radio" name="q-comida" value="incorrecto"> Químicos artificiales sintéticos</label>
+                </div>
+                <button class="quiz-btn" onclick="checkQuiz('comida', 'correcto')">Enviar Respuesta</button>
+                <div class="result" id="res-comida"></div>
+            </div>
+        </section>
+
+        <section id="tecnologia">
+            <span class="category-tag">5. Tecnología</span>
+            <h2>La Inteligencia Artificial y la nueva era de la automatización cognitiva</h2>
+            <div class="news-img img-tecnologia">[Imagen de Tecnología]</div>
+            <div class="content">
+                <p>La inteligencia artificial ha dejado de ser una herramienta de consulta para convertirse en un colaborador autónomo en el tejido empresarial y creativo. Los nuevos modelos de lenguaje y sistemas multi-agente son capaces de programar software entero, diseñar arquitecturas complejas y diagnosticar enfermedades raras con un porcentaje de acierto mayor al de ojos humanos. El desafío global se desplaza ahora hacia la regulación ética y la redefinición del empleo humano.</p>
+            </div>
+
+            <div class="quiz-container">
+                <h3>📰 Quiz Express: ¿Cuál es el desafío actual clave en el desarrollo de la IA?</h3>
+                <div class="quiz-options">
+                    <label><input type="radio" name="q-tecnologia" value="incorrecto"> Conseguir que mande correos electrónicos</label>
+                    <label><input type="radio" name="q-tecnologia" value="incorrecto"> Aumentar el precio del almacenamiento</label>
+                    <label><input type="radio" name="q-tecnologia" value="correcto"> La regulación ética y el futuro del empleo</label>
+                </div>
+                <button class="quiz-btn" onclick="checkQuiz('tecnologia', 'correcto')">Enviar Respuesta</button>
+                <div class="result" id="res-tecnologia"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Los 5 Más Importantes. Todos los derechos reservados. Información veraz y al instante.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
