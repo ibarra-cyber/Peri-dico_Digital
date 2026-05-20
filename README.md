@@ -1,1 +1,1 @@
-# Peri-dico_Digital
+# PeriodicoDigital
